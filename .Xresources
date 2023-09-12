@@ -1,0 +1,67 @@
+XTerm.vt100.faceSize: 10.5
+xterm*faceName: JetBrainsMono Nerd Font
+
+XTerm*utf8: 1
+
+Xft.rgba: rgb
+Xft.antialias: 1
+Xft.autohint: 1
+Xft.hintstyle: hintslight
+
+XTerm.*.cursorBlink: false
+XTerm.*.loginShell: true
+XTerm*allowBoldFonts: false
+
+! XTerm.vt100.geometry: 80x30
+
+! improve colors
+XTerm.vt100.colorMode:  on
+XTerm.vt100.scaleHeight: 1.0
+xTerm.vt100.dynamicColors:  on
+
+! copy & paste like the gnome shell
+XTerm.vt100.translations: #override \n\
+Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
+Ctrl Shift <Key>V: insert-selection(CLIPBOARD) \n\
+Ctrl <Key>minus: smaller-vt-font() \n\
+Ctrl <Key>plus: larger-vt-font()
+
+! make the alt key behave normally
+XTerm.vt100.metaSendsEscape: true
+
+! scrollback history
+XTerm.vt100.saveLines: 4096
+
+! give xterm a voice
+XTerm.vt100.bellIsUrgent: true
+xterm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
+
+! Dracula Xresources palette
+xterm*.foreground: #F8F8F2
+xterm*.background: #282A36
+xterm*.color0:     #44475a
+xterm*.color8:     #4D4D4D
+xterm*.color1:     #FF5555
+xterm*.color9:     #FF6E67
+xterm*.color2:     #50FA7B
+xterm*.color10:    #5AF78E
+xterm*.color3:     #F1FA8C
+xterm*.color11:    #F4F99D
+xterm*.color4:     #BD93F9
+xterm*.color12:    #CAA9FA
+xterm*.color5:     #FF79C6
+xterm*.color13:    #FF92D0
+xterm*.color6:     #8BE9FD
+xterm*.color14:    #9AEDFE
+xterm*.color7:     #BFBFBF
+xterm*.color15:    #E6E6E6
+
+! right hand side scrollbar...
+! xterm*rightScrollBar: true
+! XTerm.vt100.scrollbar.width: 8
+! xterm*ScrollBar: true
+
+! stop output to terminal from jumping down to bottom of scroll again
+xterm*scrollTtyOutput: false
+
+XTerm*translations: #override Shift <Btn1Up>: exec-formatted("xdg-open '%t'", PRIMARY)  select-start() select-end()
