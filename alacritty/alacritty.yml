@@ -1,16 +1,16 @@
 window:
-  startup_mode: Maximized
-  padding:
-    x: 3
-    y: 3
-
+  # startup_mode: Maximized
+  # padding:
+  #   x: 3
+  #   y: 3
+  energy: balanced
 cursor:
   style:
     blinking: always
 
 font:
-  size: 9
-  offset: 
+  size: 10
+  offset:
     x: 0
     y: 1
   normal:
@@ -18,7 +18,7 @@ font:
     style: Regular
   bold:
     family: JetBrainsMono Nerd Font
-    style: Regular 
+    style: Regular
   italic:
     family: JetBrainsMono Nerd Font
     style: Regular Italic
@@ -26,32 +26,31 @@ font:
     family: JetBrainsMono Nerd Font
     style: Regular Italic
 
-
 # Colors (Dracula)
 colors:
   # Default colors
   primary:
-    background: '0x282a36'
-    foreground: '0xf8f8f2'
- 
+    background: "0x282a36"
+    foreground: "0xf8f8f2"
+
   # Normal colors
   normal:
-    black:   '0x44475a'
-    red:     '0xff5555'
-    green:   '0x50fa7b'
-    yellow:  '0xf1fa8c'
-    blue:    '0xbd93f9'
-    magenta: '0xff79c6'
-    cyan:    '0x8be9fd'
-    white:   '0xbbbbbb'
- 
+    black: "0x44475a"
+    red: "0xff5555"
+    green: "0x50fa7b"
+    yellow: "0xf1fa8c"
+    blue: "0xbd93f9"
+    magenta: "0xff79c6"
+    cyan: "0x8be9fd"
+    white: "0xbbbbbb"
+
   # Bright colors
   bright:
-    black:   '0x44475a'
-    red:     '0xff5555'
-    green:   '0x50fa7b'
-    yellow:  '0xf1fa8c'
-    blue:    '0xcaa9fa'
-    magenta: '0xff79c6'
-    cyan:    '0x8be9fd'
-    white:   '0xffffff'
+    black: "0x44475a"
+    red: "0xff5555"
+    green: "0x50fa7b"
+    yellow: "0xf1fa8c"
+    blue: "0xcaa9fa"
+    magenta: "0xff79c6"
+    cyan: "0x8be9fd"
+    white: "0xffffff"
