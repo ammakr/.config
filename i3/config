@@ -190,5 +190,6 @@ bar {
 }
 
 exec_always feh --bg-scale /home/ammar/wallpaper.jpg
-exec_always --no-startup-id pkill compton; compton -b
-exec --no-startup-id compton --config ~/.config/compton.conf
+# exec_always --no-startup-id pkill compton; compton -b
+# exec --no-startup-id compton --config ~/.config/compton.conf
+exec_always picom -b --backend glx --vsync
